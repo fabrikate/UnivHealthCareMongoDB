@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta charset='utf8'>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
   <title>Countries with Universal Health Care</title>
 </head>
 <body>
@@ -13,8 +15,8 @@
         <th>Flag</th>
         <th>Capital</th>
         <th>Population</th>
-        <th>Edit</th>
-        <th>Delete</th>
+        <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -24,8 +26,8 @@
       <td><img src={{flag}} height='150px' width='200px'></td>
       <td>{{capital}}</td>
       <td>{{population}}</td>
-      <td><a href="countries/:id/edit">✏</a></td>
-      <td><form action='/countries/{{id}}/?_method=delete' method='POST'><button>x</button></form></td>
+      <td><a href="countries/:id/edit">Edit</a></td>
+      <td><form action='/countries/{{id}}/?_method=delete' method='POST'><button>Delete</button></form></td>
     </tr>
     {{/each}}
   </table>

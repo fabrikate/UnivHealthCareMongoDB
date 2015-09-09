@@ -1,0 +1,31 @@
+body {
+  background-color: #D0C39D;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #352E29;
+}
+
+table {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 8px #EE2E00;
+  border-radius: 5px;
+  text-align: center;
+}
+
+thead {
+  color:#84A58E;
+  padding: 5px 5px;
+  font-size: 26px;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: #DFD2A8;
+}
+
+button {
+  background-color: #F2F0BE;
+  border: #EE2E00;
+}

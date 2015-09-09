@@ -8,6 +8,7 @@ var app = express();
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(methodOverride('_method'));
+app.use(express.static('public'));
 app.set('views', __dirname + '/views');
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
