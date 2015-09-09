@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset='utf8'>
+  <title>Countries with Universal Health Care</title>
+</head>
+<body>
+  <h1>Countries with Unviversal Health Care</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Country</th>
+        <th>Flag</th>
+        <th>Capital</th>
+        <th>Population</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+    {{#each countries}}
+    <tr>
+      <td>{{name}}</td>
+      <td><img src={{flag}} height='150px' width='200px'></td>
+      <td>{{capital}}</td>
+      <td>{{population}}</td>
+      <td><a href="countries/:id/edit">✏</a></td>
+      <td><form action='/countries/{{id}}/?_method=delete' method='POST'><button>x</button></form></td>
+    </tr>
+    {{/each}}
+  </table>
+  <a href="/countries/new">Add a Country</a>
+</body>
+</html>
